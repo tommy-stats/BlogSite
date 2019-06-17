@@ -1,0 +1,54 @@
+---
+title: "Bart Schenkeveld isn't used the passing the ball this much"
+author: "Tom Carmichael"
+date: 2019-06-16
+categories: ["R"]
+tags: ["Melbourne City", "A-League", "Passing"]
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(collapse = TRUE)
+require(stringi)
+require(stringr)
+require(dplyr)
+require(ggplot2)
+require(lubridate)
+require(ggthemr)
+```
+
+```{r import, echo=FALSE,warning=FALSE}
+Input <- read.csv('C:/Working Folder/Sport/ALeague/BART.csv')
+```
+
+Broadly, there's two types of Centre Halves that have graced the A-League across its 14 year run, you've got those built in the Kevin Muscat mould, who are capable of kicking you off the park, while somewhow remaining on it themselves (with one very major exception) and the Patrick Zwaanswijk types, who seem to be able to avoid all types of confrontation by seemingly always being a step ahead of it.
+
+Melbourne City has had it's share of [beloved meataxes](https://en.wikipedia.org/wiki/Patrick_Kisnorbo), but in it's recent years has seen a move towards a possesion based style of football, regardless of where you sit on the utility of this approach.
+
+Bart Schenkeveld definitely appears to be the former. The tattoos, the questionable [satorial choices](https://twitter.com/10sportau/status/1053609929527844864?lang=en) and the build not usually found for players in this league, however, for the second year in a row he lead the league in Pass Complete %, while racking up > 1100 passes in both years. Outrageously, over the past four years, only 6 marks of >35% Defensive Duel sucess across an entire season have been recorded, and Bart has _two_ of those, eclipsing 40% both times, a figure only ever matched once by Matt Jurman in 16-17.
+
+Bart has passed the ball, _a lot_, compared to his last two years in the Eredivise 
+
+```{r plot, echo=FALSE,warning=FALSE,fig.align='center',fig.cap="Passes per minute compared to sideways pass % for Bart Schenkeveld over his two years at Melbourne City and his last two years in the Eredivisie"}
+Input$Team <- as.factor(if_else(grepl("Melbourne City",Input$Match),"Melbourne City","PEC Zwolle"))
+ggthemr('pale')
+ggplot(Input,aes(x=Passes...accurate/Minutes.played,y=(Passes...accurate-Forward.passes...accurate-Back.passes...accurate)/Passes...accurate*100,fill=Team))+geom_point(shape = 21,size=3,colour = "black",stroke=1)+xlab("Attempted passes per minute")+ylab("Sideways pass %")+ scale_fill_manual(breaks = c("Melbourne City", "PEC Zwolle"),
+                        values=c("#6baddfff", "#1e59aeff"))+
+  ggtitle("Passing Statistics for Bart Schenkeveld","Attempted Passes vs Sideways pass %")
+```
+
+But he's largely passed it sideways (which will be no surprise to anyone whose seen Melbourne City play over the past two seasons), especially compared to his passing statistics from his last two years at PEC Zwolle. Normalising for minutes played, 
+
+He's had a positional change in there too. He was largely a right back for Zwolle, but migrated to a full time centre half at Melbourne City.
+
+
+```{r plotie, echo=FALSE,warning=FALSE,fig.align='center',fig.cap="Passes per minute compared to sideways pass % for Bart Schenkeveld over his two years at Melbourne City and his last two years in the Eredivisie"}
+Input$Team <- as.factor(if_else(grepl("Melbourne City",Input$Match),"Melbourne City","PEC Zwolle"))
+ggthemr('pale')
+ggplot(Input,aes(x=Long.passes...accurate/Minutes.played*90,y=Forward.passes...accurate/Minutes.played*90,fill=Team))+geom_point(shape = 21,size=3,colour = "black",stroke=1)+xlab("Long passes per game")+ylab("Forward passes per game")+ scale_fill_manual(breaks = c("Melbourne City", "PEC Zwolle"),
+                        values=c("#6baddfff", "#1e59aeff"))+
+  ggtitle("Passing Statistics for Bart Schenkeveld","Long passes per game vs Forward Passes per game")
+```
+
+So the amount of long passes and forward passes per game (which has been normalised to overall game length, so if he only played 80 minutes, we assume that if he had played that other 10 minutes availible in that game he would have continued making passes at this rate) hasn't actually changed, which is a shame, as his forward pass competion % is the the highest in the A-League for any outfield player who managed at least 25 games last year.
+
+So while Melbourne City searches for a new manager and decides if it's going to tie Bart Schenkeveld down to a marquee contract as it's been reported he wants, it will be interesting to see what role he's going to be asked to play if he's still at AAMI park next season. Because it seems if there ever was a  player deserving of the rare marquee contract for a defender, you'd have to think Bart has done everything asked of him and more for that.

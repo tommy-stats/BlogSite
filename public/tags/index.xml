@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Sets of Stats</title>
+    <link>/tags/</link>
+    <description>Recent content in Tags on Sets of Stats</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Tom Carmichael</copyright>
+    <lastBuildDate>Sun, 16 Jun 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>A-League</title>
+      <link>/tags/a-league/</link>
+      <pubDate>Sun, 16 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/a-league/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Melbourne City</title>
+      <link>/tags/melbourne-city/</link>
+      <pubDate>Sun, 16 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/melbourne-city/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Passing</title>
+      <link>/tags/passing/</link>
+      <pubDate>Sun, 16 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/passing/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

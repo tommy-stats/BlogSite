@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sets of Stats</title>
+    <link>/</link>
+    <description>Recent content on Sets of Stats</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Tom Carmichael</copyright>
+    <lastBuildDate>Mon, 17 Jun 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>About</title>
+      <link>/page/about/</link>
+      <pubDate>Mon, 17 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/page/about/</guid>
+      <description>Sets of Stats is a place to write about sports statistics in Australia (mainly the A-League and AFL).
+In my non spare time I also do data analysis</description>
+    </item>
+    
+    <item>
+      <title>Bart Schenkeveld isn&#39;t used the passing the ball this much</title>
+      <link>/2019/06/16/2019-06-16-bart-schenkeveld-passing/</link>
+      <pubDate>Sun, 16 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/2019/06/16/2019-06-16-bart-schenkeveld-passing/</guid>
+      <description>Broadly, there’s two types of Centre Halves that have graced the A-League across its 14 year run, you’ve got those built in the Kevin Muscat mould, who are capable of kicking you off the park, while somewhow remaining on it themselves (with one very major exception) and the Patrick Zwaanswijk types, who seem to be able to avoid all types of confrontation by seemingly always being a step ahead of it.</description>
+    </item>
+    
+  </channel>
+</rss>

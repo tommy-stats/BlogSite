@@ -1,0 +1,29 @@
+---
+title: "Bart Schenkeveld never had to pass the ball this much"
+author: "Frida Gomam"
+date: 2019-06-16
+categories: ["R"]
+tags: ["Melbourne City", "A-League", "Passing"]
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(collapse = TRUE)
+require(stringi)
+require(stringr)
+require(dplyr)
+require(ggplot2)
+require(lubridate)
+```
+
+```{r echo=FALSE,warning=FALSE}
+Input <- read.csv('C:/Working Folder/Sport/ALeague/BART.csv')
+```
+
+Broadly, there's two types of Centre Halves that have graced the A-League across its 14 year run, you've got those built in the Kevin Muscat mould, who are capable of kicking you off the park, while somewhow remaining on it and the Patrick Zwaanswijk types, who seem to be able to avoid all types of confrontation by seemingly always being a step ahead of it.
+
+Melbourne City has had it's share of [beloved meataxes](https://en.wikipedia.org/wiki/Patrick_Kisnorbo), but in it's recent years has seen a move towards a possesion based style of football, regardless of where you sit on the utility of this approach.
+
+```{r plot, echo=FALSE,warning=FALSE}
+Input$Team <- as.factor(if_else(grepl("Melbourne City",Input$Match),"Australia","Holland"))
+```
+
