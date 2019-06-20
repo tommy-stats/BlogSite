@@ -10,7 +10,6 @@ description: ''
 
 Melbourne City have an odd connection with Bolton Wanderers, with Aaron Mooy, Scott Jamieson, Luke Brattan, ex coach Warren Joyce and now [Craig Noone](https://www.foxsports.com.au/football/a-league/melbourne-city-sign-craig-noone-from-bolton-wanderers/news-story/3e1d9317ca8a0626a7a736ec34940680) have been involved for both clubs. 
 
-<<<<<<< HEAD
 Noone is a fair bit different to most of the Wingers that Melbourne City posseses (and plays a little bit counter to the ["City Way"](https://en.wikipedia.org/wiki/City_Football_Group#The_City_Way)) in that he's a move the ball forward type of winger. 
 
 Firstly, and this might seem like a small thing, he passes the ball forwards. 
@@ -100,4 +99,3 @@ ggplot(NULL)+
 And while expecting Craig Noone to come in and replace the verve and pace that Arzani brought to the team a season ago is unrealistic, it wouldn't be hugely surprising to see Noone offer a substnatially different look to Melbourne City's wide play this year.
 =======
 Noone is a fair bit different to most of the Wingers that Melbourne City posseses (and plays a little bit counter to the ["City Way"](https://en.wikipedia.org/wiki/City_Football_Group#The_City_Way))
->>>>>>> 9a4d4cc3cfd3761e92f3b9d2441296dc9a38a49d
