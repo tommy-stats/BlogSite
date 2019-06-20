@@ -10,7 +10,7 @@ description: ''
 
 Melbourne City have an odd connection with Bolton Wanderers, with Aaron Mooy, Scott Jamieson, Luke Brattan, ex coach Warren Joyce and now [Craig Noone](https://www.foxsports.com.au/football/a-league/melbourne-city-sign-craig-noone-from-bolton-wanderers/news-story/3e1d9317ca8a0626a7a736ec34940680) have been involved for both clubs. 
 
-Noone is a fair bit different to most of the Wingers that Melbourne City posseses (and plays a little bit counter to the ["City Way"](https://en.wikipedia.org/wiki/City_Football_Group#The_City_Way)) in that he's a move the ball forward type of winger. 
+Noone is a fair bit different to most of the Wingers that Melbourne City possess (and plays a little bit counter to the ["City Way"](https://en.wikipedia.org/wiki/City_Football_Group#The_City_Way)) in that he's a move the ball forward type of winger. 
 
 Firstly, and this might seem like a small thing, he passes the ball forwards. 
 ```{r setup, include=FALSE}
@@ -55,11 +55,11 @@ ggplot(NULL)+
   no_legend()+
   xlab("Total passes attempted")+
   ylab("Ratio of Forwards to Backwards passes")+
-  ggtitle("Melbourne City wingers - Pass behaviour","Passes vs Ratio of Forwards to Backwards passing")
+  ggtitle("Melbourne City wingers - Pass behavior","Passes vs Ratio of Forwards to Backwards passing")
   
 ```
 
-This is important for a number of reasons, firstly, City were maligned last year for slow movement with the ball once they'd moved it out wide, Noone makes fewer passes of the ball than either of City's main two wide threats last year, Berenguer and Wales, but he tends to make a lot more forward passes when given the opportunity to make one. Some of this definitely comes down to game plan, but these figures include a seasons at Cardiff where the game plan was much more condusive to on the floor football. This would be a marked change from a City wide player.
+This is important for a number of reasons, firstly, City were maligned last year for slow movement with the ball once they'd moved it out wide, Noone makes fewer passes of the ball than either of City's main two wide threats last year, Berenguer and Wales, but he tends to make a lot more forward passes when given the opportunity to make one. Some of this definitely comes down to game plan, but these figures include a seasons at Cardiff where the game plan was much more conducive to on the floor football. This would be a marked change from a City wide player.
 
 The other thing that will likely make him stand out from the current crop of wingers is his propensity to dribble as demonstrated here against Blackburn last year off a corner from Luca Connell
 
@@ -68,7 +68,7 @@ The other thing that will likely make him stand out from the current crop of win
 </center>
 
 
-It's usually fast, simple dribbles and then an attempt to release the ball, his success rate is ~70% which compares favourably with Berenguer and is better than both Lachlan Wales and Daniel Arzani. The comparison with Arzani isn't a bad one, because while unlikely to reach the heights the young flyer did when he was at Melbourne City, Arzani and Noone have a few things in common, firstly, they dribble the ball _a lot_ and secondly, they have a high ratio of dribbles to passes.
+It's usually fast, simple dribbles and then an attempt to release the ball, his success rate is ~70% which compares favorably with Berenguer and is better than both Lachlan Wales and Daniel Arzani. The comparison with Arzani isn't a bad one, because while unlikely to reach the heights the young flyer did when he was at Melbourne City, Arzani and Noone have a few things in common, firstly, they dribble the ball _a lot_ and secondly, they have a high ratio of dribbles to passes.
 
 ```{r plot 2,echo=FALSE,warning=FALSE,fig.width=6,fig.height=6,fig.align='center'}
 ImportArzani <- read.csv('C:/Working Folder/Sport/ALeague/Player stats D. Arzani.csv')
@@ -96,4 +96,4 @@ ggplot(NULL)+
   ggtitle("Melbourne City winger - Pass vs Dribble","Total dribble attempts per game vs Dribble to Pass ratio")
   
 ```
-And while expecting Craig Noone to come in and replace the verve and pace that Arzani brought to the team a season ago is unrealistic, it wouldn't be hugely surprising to see Noone offer a substnatially different look to Melbourne City's wide play this year.
+And while expecting Craig Noone to come in and replace the verve and pace that Arzani brought to the team a season ago is unrealistic, it wouldn't be hugely surprising to see Noone offer a substantially different look to Melbourne City's wide play this year.
